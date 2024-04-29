@@ -1,0 +1,69 @@
+*{
+    font-size: 24px;
+    padding: 10px;
+    margin: 0;
+}
+ol li{
+    /* text-decoration: none;
+    color: black; */
+    cursor: pointer;
+
+}
+
+.story-block{
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+.story-block:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.story-block > div {
+	width: 400px;
+	position: relative;
+}
+
+
+.story-modalwindow{
+    position: relative;
+    background-color: rgb(255, 240, 223);
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 30px 40px;
+    border: 1px solid #888;
+    width: 80vw;
+    min-height: 80vh; /* Could be more or less, depending on screen size */
+
+    
+}
+
+    .story-modalwindow h3{
+        padding-bottom: 30px;
+    }
+    .story-modalwindow img{
+        width: 40%;
+        float: left;
+        padding: 0px 25px 25px 0px;
+    }
+    
+
+.closebtn{
+    color: #464646;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
